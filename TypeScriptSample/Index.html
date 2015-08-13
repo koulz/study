@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Test </title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/FirstModule.js"></script>
+    <script>
+        $(function(){
+           var greet = new Greeter("yamada","tarou");
+            alert(greet.getGreet("Hello"));
+
+            $("#Add").on("click", function(){greet.showName("usrName"); return false;});
+        });
+    </script>
+
+</head>
+<body>
+ <span>test page</span>
+<div>
+    <input type="text" id="usrName" name="usrName">
+    <button id="Add" >Add</button>
+</div>
+</body>
+</html>

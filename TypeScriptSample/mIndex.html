@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <title>Test </title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.min.js"></script>
+    <script src="js/module/modulea.js"></script>
+    <script src="js/module/moduleb.js"></script>
+    <script>
+        $(function(){
+            $("#Add").on("click", function(){
+                modB.run();
+
+                modB.Counter.count();
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+<span>Module test</span>
+<div>
+    <input type="text" id="usrName" name="usrName">
+    <button id="Add" >Add</button>
+</div>
+<span id="result"></span>
+</body>
+</html>
