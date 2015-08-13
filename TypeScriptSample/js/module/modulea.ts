@@ -12,5 +12,10 @@ module modA {
         {
             return this.n * x;
         }
+        
+        double(x:number):number
+        {
+            return 2*x;
+        }
     }
 }
